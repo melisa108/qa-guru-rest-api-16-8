@@ -35,7 +35,7 @@ public class ReqresInTestsHomework {
     }
 
     @Test
-    void missingParametresInBodyRequestTest() {
+    void nullParametersInBodyRequestTest() {
         String data = "{ \"name\": null, \"job\": null }"; // name and job null
 
         given()
@@ -52,7 +52,7 @@ public class ReqresInTestsHomework {
     }
 
     @Test
-    void MissingParametrInBodyRequestTest() {
+    void missingParameterInBodyRequestTest() {
         String data = "{ \"job\": \"leader\" }";  // missing name
 
         given()
@@ -70,7 +70,7 @@ public class ReqresInTestsHomework {
     }
 
     @Test
-    void matchingFirstandLastNameTest() {
+    void matchingFirstAndLastNameTest() {
 
         given()
                 .log().uri()
